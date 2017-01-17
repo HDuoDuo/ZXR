@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="237" id="KGk-i7-Jjw" customClass="personTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="317"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="317"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-Ic-dO5">
+                        <rect key="frame" x="12" y="12" width="410" height="304.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="LJa-BE-C2h">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bae-KV-hbh"/>
+                                    <constraint firstAttribute="width" constant="40" id="TJe-lL-i4m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张建明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkN-8C-TV6">
+                                <rect key="frame" x="55" y="10" width="40" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="擅长风格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iO-4x-TQh">
+                                <rect key="frame" x="55" y="34" width="54" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美式、现代" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-WG-dnG">
+                                <rect key="frame" x="129" y="35.5" width="61.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-Wd-ZMb">
+                                <rect key="frame" x="334" y="15" width="64" height="30"/>
+                                <state key="normal" title="找TA设计"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-YF-ZKQ">
+                                <rect key="frame" x="10" y="62" width="150" height="230.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Nqe-yN-5aC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="icon_-financial-management" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-eN-Xbg">
+                                <rect key="frame" x="170" y="62" width="228" height="110.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_-financial-management" translatesAutoresizingMaskIntoConstraints="NO" id="Rbb-NJ-nLX">
+                                <rect key="frame" x="170" y="182.5" width="228" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rbb-NJ-nLX" firstAttribute="leading" secondItem="wKa-YF-ZKQ" secondAttribute="trailing" constant="10" id="0LN-q3-Idp"/>
+                            <constraint firstItem="1iO-4x-TQh" firstAttribute="leading" secondItem="LJa-BE-C2h" secondAttribute="trailing" constant="5" id="1b1-lJ-EQs"/>
+                            <constraint firstItem="1iO-4x-TQh" firstAttribute="bottom" secondItem="LJa-BE-C2h" secondAttribute="bottom" id="2GC-ds-xno"/>
+                            <constraint firstItem="FS1-WG-dnG" firstAttribute="centerY" secondItem="1iO-4x-TQh" secondAttribute="centerY" id="3oV-mF-qFS"/>
+                            <constraint firstAttribute="trailing" secondItem="4IO-eN-Xbg" secondAttribute="trailing" constant="12" id="9tg-SL-Z9A"/>
+                            <constraint firstItem="dIT-Wd-ZMb" firstAttribute="centerY" secondItem="LJa-BE-C2h" secondAttribute="centerY" id="Jzg-sY-6cZ"/>
+                            <constraint firstItem="4IO-eN-Xbg" firstAttribute="leading" secondItem="wKa-YF-ZKQ" secondAttribute="trailing" constant="10" id="MPj-bE-1Y0"/>
+                            <constraint firstItem="Rbb-NJ-nLX" firstAttribute="bottom" secondItem="wKa-YF-ZKQ" secondAttribute="bottom" id="PuT-xt-9rn"/>
+                            <constraint firstItem="LJa-BE-C2h" firstAttribute="top" secondItem="AIP-Ic-dO5" secondAttribute="top" constant="10" id="QYT-3n-47i"/>
+                            <constraint firstItem="mkN-8C-TV6" firstAttribute="leading" secondItem="LJa-BE-C2h" secondAttribute="trailing" constant="5" id="RTH-Rr-aQb"/>
+                            <constraint firstItem="LJa-BE-C2h" firstAttribute="leading" secondItem="AIP-Ic-dO5" secondAttribute="leading" constant="10" id="TLN-to-h3B"/>
+                            <constraint firstItem="mkN-8C-TV6" firstAttribute="top" secondItem="LJa-BE-C2h" secondAttribute="top" id="Tzs-ku-nP5"/>
+                            <constraint firstItem="4IO-eN-Xbg" firstAttribute="top" secondItem="wKa-YF-ZKQ" secondAttribute="top" id="WUJ-Hl-iQX"/>
+                            <constraint firstAttribute="bottom" secondItem="wKa-YF-ZKQ" secondAttribute="bottom" constant="12" id="b4j-dA-Vhr"/>
+                            <constraint firstItem="Rbb-NJ-nLX" firstAttribute="top" secondItem="4IO-eN-Xbg" secondAttribute="bottom" constant="10" id="dPT-u5-lls"/>
+                            <constraint firstItem="Rbb-NJ-nLX" firstAttribute="height" secondItem="4IO-eN-Xbg" secondAttribute="height" id="iwD-e8-Nhy"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbb-NJ-nLX" secondAttribute="trailing" constant="12" id="jNQ-2Q-ZrK"/>
+                            <constraint firstItem="FS1-WG-dnG" firstAttribute="leading" secondItem="1iO-4x-TQh" secondAttribute="trailing" constant="20" id="kxJ-O7-Naw"/>
+                            <constraint firstItem="Rbb-NJ-nLX" firstAttribute="top" secondItem="4IO-eN-Xbg" secondAttribute="bottom" constant="10" id="oN2-F5-by1"/>
+                            <constraint firstItem="wKa-YF-ZKQ" firstAttribute="top" secondItem="FS1-WG-dnG" secondAttribute="bottom" constant="12" id="pqJ-LM-nQo"/>
+                            <constraint firstAttribute="trailing" secondItem="dIT-Wd-ZMb" secondAttribute="trailing" constant="12" id="q1A-73-Yhu"/>
+                            <constraint firstItem="wKa-YF-ZKQ" firstAttribute="leading" secondItem="LJa-BE-C2h" secondAttribute="leading" id="s6t-CD-gd1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AIP-Ic-dO5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Cmz-9O-5xV"/>
+                    <constraint firstAttribute="bottom" secondItem="AIP-Ic-dO5" secondAttribute="bottom" id="Ged-aX-HFB"/>
+                    <constraint firstItem="AIP-Ic-dO5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qKW-q0-3r7"/>
+                    <constraint firstAttribute="trailing" secondItem="AIP-Ic-dO5" secondAttribute="trailing" constant="12" id="wVA-9A-ALH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="119" y="208.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="375" height="225"/>
+        <image name="icon_-financial-management" width="30" height="30"/>
+    </resources>
+</document>

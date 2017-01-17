@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="74" id="nGl-vg-rEz" customClass="AddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nGl-vg-rEz" id="geV-7M-sRr">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxz-Pe-vyp">
+                        <rect key="frame" x="12" y="25" width="18" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="hnJ-Le-xRg"/>
+                            <constraint firstAttribute="height" constant="24" id="rEx-kd-YUG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ5-RM-edB">
+                        <rect key="frame" x="40" y="10" width="41" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="134****6632" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1n-QL-TeX">
+                        <rect key="frame" x="202" y="10" width="75" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：重庆市 重庆市 南岸区 铜元局街道 铜滨公园 鱼悦铜元" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSS-jk-jhn">
+                        <rect key="frame" x="40" y="30" width="237" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="mA1-Nn-dF9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皮蛋瘦肉粥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsn-vh-AmM">
+                        <rect key="frame" x="91" y="10" width="62" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tZ5-RM-edB" firstAttribute="leading" secondItem="jxz-Pe-vyp" secondAttribute="trailing" constant="10" id="BKW-0v-0wU"/>
+                    <constraint firstItem="u1n-QL-TeX" firstAttribute="top" secondItem="geV-7M-sRr" secondAttribute="top" constant="10" id="K65-Jt-Nnk"/>
+                    <constraint firstAttribute="trailing" secondItem="u1n-QL-TeX" secondAttribute="trailing" constant="10" id="SaM-Gm-4OX"/>
+                    <constraint firstItem="wsn-vh-AmM" firstAttribute="bottom" secondItem="tZ5-RM-edB" secondAttribute="bottom" id="Thw-c8-Yl1"/>
+                    <constraint firstAttribute="trailing" secondItem="CSS-jk-jhn" secondAttribute="trailing" constant="10" id="ZHR-yh-MWj"/>
+                    <constraint firstItem="jxz-Pe-vyp" firstAttribute="leading" secondItem="geV-7M-sRr" secondAttribute="leading" constant="12" id="cZv-TV-Yvl"/>
+                    <constraint firstItem="CSS-jk-jhn" firstAttribute="top" secondItem="u1n-QL-TeX" secondAttribute="bottom" constant="5" id="hFE-3T-rv3"/>
+                    <constraint firstItem="wsn-vh-AmM" firstAttribute="leading" secondItem="tZ5-RM-edB" secondAttribute="trailing" constant="10" id="m1A-9P-SHr"/>
+                    <constraint firstItem="jxz-Pe-vyp" firstAttribute="centerY" secondItem="geV-7M-sRr" secondAttribute="centerY" id="pl6-4c-OiP"/>
+                    <constraint firstItem="tZ5-RM-edB" firstAttribute="top" secondItem="geV-7M-sRr" secondAttribute="top" constant="10" id="qej-uo-8mN"/>
+                    <constraint firstItem="CSS-jk-jhn" firstAttribute="leading" secondItem="jxz-Pe-vyp" secondAttribute="trailing" constant="10" id="vQu-z3-xJl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-266" y="-449"/>
+        </tableViewCell>
+    </objects>
+</document>

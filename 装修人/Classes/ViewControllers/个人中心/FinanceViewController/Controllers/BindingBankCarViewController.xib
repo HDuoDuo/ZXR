@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindingBankCarViewController">
+            <connections>
+                <outlet property="bing_tableView" destination="mCl-VR-bkW" id="xZC-ET-gHV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-VR-bkW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="i5M-Pr-FkT" id="vXJ-EP-pJR"/>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="BqE-8u-0Xa"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67l-hs-gEQ">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmD-oa-xbZ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="j2b-BZ-CsL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw6-yQ-wNb">
+                            <rect key="frame" x="122.5" y="15.5" width="76.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_add_goods" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-rQ-H3O">
+                            <rect key="frame" x="101.5" y="16" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="0pk-Ar-Krw"/>
+                                <constraint firstAttribute="height" constant="16" id="c1u-9C-Cm2"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuc-SS-0VA">
+                            <rect key="frame" x="0.0" y="1" width="320" height="48"/>
+                            <connections>
+                                <action selector="add_BANKCardAction:" destination="-1" eventType="touchUpInside" id="oxC-ld-7Cz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kuc-SS-0VA" firstAttribute="leading" secondItem="67l-hs-gEQ" secondAttribute="leading" id="2yu-gK-2a7"/>
+                        <constraint firstItem="Rw6-yQ-wNb" firstAttribute="leading" secondItem="xyK-rQ-H3O" secondAttribute="trailing" constant="5" id="AFN-E0-Beg"/>
+                        <constraint firstItem="rmD-oa-xbZ" firstAttribute="top" secondItem="67l-hs-gEQ" secondAttribute="top" id="CZA-84-DUK"/>
+                        <constraint firstItem="Rw6-yQ-wNb" firstAttribute="centerY" secondItem="67l-hs-gEQ" secondAttribute="centerY" id="Cqp-AO-bxw"/>
+                        <constraint firstItem="Rw6-yQ-wNb" firstAttribute="centerX" secondItem="67l-hs-gEQ" secondAttribute="centerX" id="VEX-ka-Dsh"/>
+                        <constraint firstItem="kuc-SS-0VA" firstAttribute="top" secondItem="rmD-oa-xbZ" secondAttribute="bottom" id="adh-mV-WFD"/>
+                        <constraint firstItem="rmD-oa-xbZ" firstAttribute="leading" secondItem="67l-hs-gEQ" secondAttribute="leading" id="b2M-8E-Cyz"/>
+                        <constraint firstItem="xyK-rQ-H3O" firstAttribute="centerY" secondItem="67l-hs-gEQ" secondAttribute="centerY" id="eLI-lY-iGV"/>
+                        <constraint firstAttribute="bottom" secondItem="kuc-SS-0VA" secondAttribute="bottom" id="oGx-0w-GzH"/>
+                        <constraint firstAttribute="trailing" secondItem="kuc-SS-0VA" secondAttribute="trailing" id="upK-Uf-BkG"/>
+                        <constraint firstAttribute="trailing" secondItem="rmD-oa-xbZ" secondAttribute="trailing" id="ycc-av-32E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mCl-VR-bkW" secondAttribute="bottom" constant="49" id="TBU-B0-DaN"/>
+                <constraint firstAttribute="trailing" secondItem="mCl-VR-bkW" secondAttribute="trailing" id="Ub7-NR-r0M"/>
+                <constraint firstAttribute="bottom" secondItem="67l-hs-gEQ" secondAttribute="bottom" id="Whg-rt-fcj"/>
+                <constraint firstItem="67l-hs-gEQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f1q-7n-cSU"/>
+                <constraint firstItem="67l-hs-gEQ" firstAttribute="top" secondItem="mCl-VR-bkW" secondAttribute="bottom" id="m0b-aR-BUI"/>
+                <constraint firstItem="mCl-VR-bkW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mzg-37-oOd"/>
+                <constraint firstAttribute="trailing" secondItem="67l-hs-gEQ" secondAttribute="trailing" id="rMF-cJ-3hj"/>
+                <constraint firstItem="mCl-VR-bkW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vaC-5I-PNG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_add_goods" width="15" height="15"/>
+    </resources>
+</document>

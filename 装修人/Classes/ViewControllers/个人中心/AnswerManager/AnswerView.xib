@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9FV-42-vFw" customClass="AnswerView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-MF-odx" customClass="BGView">
+                    <rect key="frame" x="60" y="0.0" width="300" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="q_head_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="w1N-0K-rXR">
+                            <rect key="frame" x="48" y="10" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="QiI-3x-xCr"/>
+                                <constraint firstAttribute="width" constant="24" id="mcz-f8-mkO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房子装修或发现很多东西......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do1-FK-mC7">
+                            <rect key="frame" x="73" y="12" width="226" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="WBR-sN-See"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果当时装修验收结果的时候" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-Cl-Z9l">
+                            <rect key="frame" x="48" y="39" width="181" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="cZK-om-Ulh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-02-10  22：55" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-2v-cI5">
+                            <rect key="frame" x="48" y="61" width="242" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="ltW-xM-HoQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWZ-ZC-PgP">
+                            <rect key="frame" x="230" y="38" width="60" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="anz-y1-ilx"/>
+                                <constraint firstAttribute="height" constant="21" id="ash-Nq-9dY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="查看回复"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="w1N-0K-rXR" firstAttribute="leading" secondItem="oLe-MF-odx" secondAttribute="leading" constant="48" id="2lQ-vF-C0G"/>
+                        <constraint firstItem="G5j-Cl-Z9l" firstAttribute="top" secondItem="w1N-0K-rXR" secondAttribute="bottom" constant="5" id="8hV-gk-hzI"/>
+                        <constraint firstItem="ZWZ-ZC-PgP" firstAttribute="top" secondItem="Do1-FK-mC7" secondAttribute="bottom" constant="5" id="Fci-U7-nhA"/>
+                        <constraint firstAttribute="trailing" secondItem="ZWZ-ZC-PgP" secondAttribute="trailing" constant="10" id="Inb-Xa-vtJ"/>
+                        <constraint firstItem="w1N-0K-rXR" firstAttribute="top" secondItem="oLe-MF-odx" secondAttribute="top" constant="10" id="Jhm-ll-f3N"/>
+                        <constraint firstItem="G5j-Cl-Z9l" firstAttribute="leading" secondItem="w1N-0K-rXR" secondAttribute="leading" id="WGY-bs-idG"/>
+                        <constraint firstAttribute="height" constant="80" id="YLC-rX-qUY"/>
+                        <constraint firstAttribute="trailing" secondItem="lVD-2v-cI5" secondAttribute="trailing" constant="10" id="YkE-Ye-8XO"/>
+                        <constraint firstItem="lVD-2v-cI5" firstAttribute="top" secondItem="G5j-Cl-Z9l" secondAttribute="bottom" constant="1" id="h6I-h4-tLU"/>
+                        <constraint firstItem="Do1-FK-mC7" firstAttribute="top" secondItem="oLe-MF-odx" secondAttribute="top" constant="12" id="iW4-ag-2US"/>
+                        <constraint firstAttribute="trailing" secondItem="Do1-FK-mC7" secondAttribute="trailing" constant="1" id="nL7-H2-bFa"/>
+                        <constraint firstItem="Do1-FK-mC7" firstAttribute="leading" secondItem="w1N-0K-rXR" secondAttribute="trailing" constant="1" id="qc7-ZK-iSH"/>
+                        <constraint firstItem="lVD-2v-cI5" firstAttribute="leading" secondItem="oLe-MF-odx" secondAttribute="leading" constant="48" id="urx-4k-XbC"/>
+                        <constraint firstItem="ZWZ-ZC-PgP" firstAttribute="leading" secondItem="G5j-Cl-Z9l" secondAttribute="trailing" constant="1" id="yfr-V7-j2P"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_answer" translatesAutoresizingMaskIntoConstraints="NO" id="5VS-Sd-xbF">
+                    <rect key="frame" x="20" y="0.0" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="CRm-zm-u5A"/>
+                        <constraint firstAttribute="width" constant="80" id="HLW-wA-J7k"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oLe-MF-odx" secondAttribute="trailing" constant="20" id="A7C-SE-B5E"/>
+                <constraint firstItem="5VS-Sd-xbF" firstAttribute="leading" secondItem="9FV-42-vFw" secondAttribute="leading" constant="20" id="Tfb-ce-e1z"/>
+                <constraint firstItem="5VS-Sd-xbF" firstAttribute="top" secondItem="9FV-42-vFw" secondAttribute="top" id="Xsa-Tc-lzh"/>
+                <constraint firstItem="oLe-MF-odx" firstAttribute="top" secondItem="9FV-42-vFw" secondAttribute="top" id="acr-l2-e9R"/>
+                <constraint firstItem="oLe-MF-odx" firstAttribute="leading" secondItem="9FV-42-vFw" secondAttribute="leading" constant="60" id="wF7-at-nhN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="450" y="-368"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_answer" width="81" height="80"/>
+        <image name="q_head_portrait" width="21" height="21"/>
+    </resources>
+</document>

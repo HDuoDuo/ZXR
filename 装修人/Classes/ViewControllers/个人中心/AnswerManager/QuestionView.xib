@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H5F-gF-pFo" customClass="QuestionView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ON0-OD-a8Y" customClass="BGView">
+                    <rect key="frame" x="60" y="0.0" width="300" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="儿童房如何布置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRJ-hN-egi">
+                            <rect key="frame" x="48" y="12" width="251" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="i42-I8-R2Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33人回答" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-zP-SDz">
+                            <rect key="frame" x="48" y="36" width="181" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="vmr-iz-z0K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-02-10  22：55" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-jB-hYh">
+                            <rect key="frame" x="48" y="58" width="242" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="4Pu-GH-TOI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-op-Egc">
+                            <rect key="frame" x="230" y="36" width="60" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="FbN-YA-hJm"/>
+                                <constraint firstAttribute="height" constant="21" id="V0b-P8-lsR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="有新回复"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MCE-op-Egc" firstAttribute="top" secondItem="TRJ-hN-egi" secondAttribute="bottom" constant="3" id="0n9-uA-xsv"/>
+                        <constraint firstAttribute="height" constant="80" id="1e2-91-JjR"/>
+                        <constraint firstItem="FuF-zP-SDz" firstAttribute="leading" secondItem="ON0-OD-a8Y" secondAttribute="leading" constant="48" id="3Ab-hr-OHC"/>
+                        <constraint firstItem="u8z-jB-hYh" firstAttribute="leading" secondItem="ON0-OD-a8Y" secondAttribute="leading" constant="48" id="8Yz-B8-2yp"/>
+                        <constraint firstAttribute="trailing" secondItem="TRJ-hN-egi" secondAttribute="trailing" constant="1" id="9A1-A9-wZ8"/>
+                        <constraint firstItem="TRJ-hN-egi" firstAttribute="top" secondItem="ON0-OD-a8Y" secondAttribute="top" constant="12" id="C2f-g2-uJD"/>
+                        <constraint firstItem="u8z-jB-hYh" firstAttribute="top" secondItem="FuF-zP-SDz" secondAttribute="bottom" constant="1" id="G8q-7l-jlM"/>
+                        <constraint firstAttribute="trailing" secondItem="MCE-op-Egc" secondAttribute="trailing" constant="10" id="Yge-LX-5ZR"/>
+                        <constraint firstItem="TRJ-hN-egi" firstAttribute="leading" secondItem="ON0-OD-a8Y" secondAttribute="leading" constant="48" id="f0Z-nT-6G2"/>
+                        <constraint firstItem="MCE-op-Egc" firstAttribute="leading" secondItem="FuF-zP-SDz" secondAttribute="trailing" constant="1" id="k3B-cP-v1j"/>
+                        <constraint firstItem="FuF-zP-SDz" firstAttribute="top" secondItem="TRJ-hN-egi" secondAttribute="bottom" constant="3" id="luy-8a-mrd"/>
+                        <constraint firstAttribute="trailing" secondItem="u8z-jB-hYh" secondAttribute="trailing" constant="10" id="sO3-ED-4Hj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_question" translatesAutoresizingMaskIntoConstraints="NO" id="pWi-Vn-TFs">
+                    <rect key="frame" x="20" y="0.0" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="28I-NO-sM2"/>
+                        <constraint firstAttribute="height" constant="80" id="ziP-vw-HtC"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ON0-OD-a8Y" firstAttribute="top" secondItem="H5F-gF-pFo" secondAttribute="top" id="GdQ-xC-MU9"/>
+                <constraint firstItem="pWi-Vn-TFs" firstAttribute="leading" secondItem="H5F-gF-pFo" secondAttribute="leading" constant="20" id="RoM-4L-fhe"/>
+                <constraint firstItem="pWi-Vn-TFs" firstAttribute="top" secondItem="H5F-gF-pFo" secondAttribute="top" id="b7S-bL-f7y"/>
+                <constraint firstAttribute="trailing" secondItem="ON0-OD-a8Y" secondAttribute="trailing" constant="20" id="njS-d7-Ep4"/>
+                <constraint firstItem="ON0-OD-a8Y" firstAttribute="leading" secondItem="H5F-gF-pFo" secondAttribute="leading" constant="60" id="yVT-UJ-upL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="405" y="-354.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_question" width="81" height="80"/>
+    </resources>
+</document>

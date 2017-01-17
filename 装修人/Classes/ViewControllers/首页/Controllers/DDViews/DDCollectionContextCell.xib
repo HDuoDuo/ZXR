@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DDCollectionContextCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cK-WD-22Z">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="105"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dxa-7K-1FB">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.6442871094" blue="0.51288519970000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="FUw-CI-4GU"/>
+                                    <constraint firstAttribute="width" secondItem="dxa-7K-1FB" secondAttribute="height" multiplier="25:25" id="sIR-3e-deh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="床类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G52-ac-ZBZ">
+                                <rect key="frame" x="0.0" y="80" width="75" height="20"/>
+                                <color key="backgroundColor" red="0.83438849449157715" green="0.90799242258071899" blue="0.42895019054412842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7Ni-8N-xT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dxa-7K-1FB" firstAttribute="top" secondItem="6cK-WD-22Z" secondAttribute="top" id="9g5-IO-aPj"/>
+                            <constraint firstAttribute="trailing" secondItem="dxa-7K-1FB" secondAttribute="trailing" id="FoI-B2-PXd"/>
+                            <constraint firstAttribute="trailing" secondItem="G52-ac-ZBZ" secondAttribute="trailing" id="MvR-OV-1KC"/>
+                            <constraint firstAttribute="width" constant="75" id="UDz-3Z-Y7x"/>
+                            <constraint firstAttribute="width" secondItem="6cK-WD-22Z" secondAttribute="height" multiplier="5:7" id="UoH-dT-fJK"/>
+                            <constraint firstItem="G52-ac-ZBZ" firstAttribute="leading" secondItem="6cK-WD-22Z" secondAttribute="leading" id="Xt8-ng-jrp"/>
+                            <constraint firstItem="G52-ac-ZBZ" firstAttribute="top" secondItem="dxa-7K-1FB" secondAttribute="bottom" constant="5" id="jqy-VJ-Cdk"/>
+                            <constraint firstAttribute="height" constant="105" id="m6B-TY-mfV"/>
+                            <constraint firstItem="dxa-7K-1FB" firstAttribute="centerX" secondItem="6cK-WD-22Z" secondAttribute="centerX" id="xBQ-aA-CgL"/>
+                            <constraint firstItem="dxa-7K-1FB" firstAttribute="centerX" secondItem="6cK-WD-22Z" secondAttribute="centerX" id="zFn-Vh-Dz3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6cK-WD-22Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Yj-Fv-wMf"/>
+                <constraint firstAttribute="trailing" secondItem="6cK-WD-22Z" secondAttribute="trailing" id="L9y-js-NtT"/>
+                <constraint firstAttribute="bottom" secondItem="6cK-WD-22Z" secondAttribute="bottom" id="eS6-6c-mZt"/>
+                <constraint firstItem="6cK-WD-22Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oqD-LZ-4HN"/>
+            </constraints>
+            <size key="customSize" width="94" height="124"/>
+            <connections>
+                <outlet property="collection_img" destination="dxa-7K-1FB" id="YGN-U5-XFA"/>
+                <outlet property="lb_collectionTitle" destination="G52-ac-ZBZ" id="f6t-O0-mj8"/>
+            </connections>
+            <point key="canvasLocation" x="-531.5" y="76.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

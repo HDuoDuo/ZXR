@@ -1,0 +1,6 @@
+framework module Pods____ {
+  umbrella header "Pods-装修人-umbrella.h"
+
+  export *
+  module * { export * }
+}
